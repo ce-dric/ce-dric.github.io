@@ -1,7 +1,7 @@
 {
 "companyName": "eldialanoche",
-"productName": "Odin-son",
-"productVersion": "0.1",
+"productName": "new planet",
+"productVersion": "0.2",
 "dataUrl": "Packages.data.unityweb",
 "wasmCodeUrl": "Packages.wasm.code.unityweb",
 "wasmFrameworkUrl": "Packages.wasm.framework.unityweb",

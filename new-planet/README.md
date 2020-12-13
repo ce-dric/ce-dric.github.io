@@ -12,3 +12,7 @@ terrain from [SimpleLowPolyNature](https://assetstore.unity.com/packages/3d/envi
 ###### 0.2
 add cat model : <br>
 cat from [VoxelAnimals](https://assetstore.unity.com/packages/3d/characters/animals/5-animated-voxel-animals-145754)
+
+###### 0.3
+distinguish by the user's environment : <br>
+apply differnet UI/UX

@@ -10,6 +10,7 @@ public class ThirdPersonCamera : MonoBehaviour
     public Transform lookAt;
     public Transform camTransform;
     public float distance = 5.0f;
+    public bool is_not_mobile = false;
 
     private float currentX = 0.0f;
     private float currentY = 45.0f;
@@ -21,10 +22,14 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void Update()
     {
-        currentX += Input.GetAxis("Mouse X");
-        currentY += Input.GetAxis("Mouse Y");
+        //if (is_not_mobile)
+        if (!Application.isMobilePlatform)
+        {
+            currentX += Input.GetAxis("Mouse X");
+            currentY += Input.GetAxis("Mouse Y");
 
-        currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
+            currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
+        }
     }
 
     private void LateUpdate()
